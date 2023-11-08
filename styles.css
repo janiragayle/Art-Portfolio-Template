@@ -1,0 +1,118 @@
+/* Add this style to your existing styles.css */
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Set background color to white */
+    color: #333; /* Set text color to a dark color for contrast */
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    margin-bottom: 20px; /* Add spacing between navigation items */
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Set link color to a dark color */
+    font-weight: bold;
+}
+
+/* Additional styles for the rest of the website */
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-item {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Add a border for better separation */
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+#enlarged-image-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+#enlarged-image-wrapper {
+    text-align: center;
+}
+
+#enlarged-image {
+    max-width: 80%; /* Adjust max-width to leave space on both sides */
+    max-height: 100vh; /* Adjust max-height to leave space on both top and bottom */
+    border: 2px solid #fff;
+}
+
+#enlarged-image-description {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+

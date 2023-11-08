@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="scripts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Your Art Portfolio</title>
+    
+</head>
+<body>
+<header>
+    <h1>Janira Gayle</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Painting</a></li>
+            <li><a href="drawing.html">Drawing</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.instagram.com/your_username/" target="_blank">Instagram</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="paintings">
+    <div class="image-gallery">
+        <div class="image-item" onclick="enlargeImage(this)">
+            <img src="imgs/14_Expressive self portrait.jpg" alt="Expressive Self Portrait">
+        </div>
+        <!-- Add more image items as needed -->
+    </div>
+    <div id="enlarged-image-container" onclick="shrinkImage()">
+        <div id="enlarged-image-wrapper">
+            <img id="enlarged-image" src="" alt="Enlarged Image">
+            <p id="enlarged-image-description" class="image-description"></p>
+        </div>
+    </div>
+</section>
+
+<!--,    <footer>
+        <p>&copy; 2023 Janira Gayle. All rights reserved.</p>
+    </footer> -->
+
+    
+</body>
+</html>
